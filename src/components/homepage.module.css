@@ -1,0 +1,34 @@
+/* ParentComponent.css */
+
+.parent {
+    display: flex;
+    margin-top:10vh;
+    overflow: auto;/* Ana bileşeni yatay olarak düzenlemek için */
+  }
+  
+  .left {
+    flex: 2; /* Sol yarısını kaplayacak */
+    background-color:bisque ;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .right {
+    flex: 2; /* Sağ yarısını ikiye bölecek */
+    display: flex; /* Sağ yarıyı dikey olarak bölmek için */
+    flex-direction: column;
+    
+  }
+  
+  .right_top {
+    flex: 1; /* Sağ üstü kaplayacak */
+    background-color: cadetblue;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .right_bottom {
+    flex: 1; /* Sağ altı kaplayacak */
+    background-color: brown;
+    height: 100vh;
+  }

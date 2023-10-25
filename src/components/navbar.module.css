@@ -1,0 +1,53 @@
+/* Navbar stil dosyası */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Öğeleri yatayda ortalar */
+    background-color: #333; /* Navbar arkaplan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 10px; /* Navbar iç boşluğu */
+    position: fixed; /* Sabit pozisyon */
+    top: 0; /* Üst kenara sabitlemek için */
+    left: 0; /* Sol kenara sabitlemek için */
+    width: 100%; /* Sayfanın genişliği kadar genişlik */
+    background-color: #333; /* Navbar arkaplan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 10px; /* Navbar iç boşluğu */
+    z-index: 1000;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Öğeler arasındaki boşluk */
+  }
+  
+  .navbar_menu label {
+    display: block;
+  }
+  
+  /* Dropdown stilleri */
+  .select {
+    position: relative;
+  }
+  
+  .select select {
+    width: 150px; /* Dropdown genişliği */
+    padding: 5px;
+  }
+  
+  /* Giriş yap ve Kayıt ol stilleri */
+  .login_button,
+  .signup_button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Düğme arkaplan rengi */
+    color: #fff; /* Düğme metin rengi */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Hover etkisi */
+  .login_button:hover,
+  .signup_button:hover {
+    background-color: #45a049; /* Hover rengi */
+  }
