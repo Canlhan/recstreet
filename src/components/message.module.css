@@ -1,0 +1,24 @@
+/* Stil dosyası */
+
+.message_container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .profil_photo {
+    width: 50px; /* Profil fotoğrafı genişliği */
+    height: 50px; /* Profil fotoğrafı yüksekliği */
+    border-radius: 50%; /* Yuvarlak profil fotoğrafı */
+    margin-right: 10px; /* Profil fotoğrafı ile metin arasındaki boşluk */
+  }
+  
+  .message_content {
+    background-color: #f1f1f1; /* Mesaj kutusu arkaplan rengi */
+    padding: 10px; /* Mesaj kutusu iç boşluğu */
+    border-radius: 10px; /* Yuvarlak kenarlar */
+  }
+  
+  .messagetext {
+    margin: 0; /* Paragrafın üst ve alt boşluğunu kaldırır */
+  }
