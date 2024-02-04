@@ -1,0 +1,49 @@
+<div>
+      <h1>React Google Haritalar</h1>
+      <Map
+        containerElement={<div style={{ height: "500px", width: "100%" }} />}
+        mapElement={<div style={{ height: "100%" }} />}
+        markers={markers}
+        onMapClick={handleMapClick}
+        onMarkerClick={handleMarkerClick}
+      />
+      {clickedLocation && (
+        <div>
+          <h2>Tıklanan Konum Bilgileri:</h2>
+          <p>Adres: {clickedLocation.address}</p>
+          <p>İlçe: {clickedLocation.district}</p>
+        </div>
+      )}
+
+      
+          </div>  
+              <div className='bottom'>
+                      <div className='nearestPlaces'>
+                        <NearestPlaces nearestPlaces={
+                            {nearestHospital:nearestHospitals,
+                            nearestSchool:nearestSchools,
+                            nearestPharmacie:nearestPharmacies}}/>
+                      </div>
+                      <div className='news'>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quaerat aliquam quas nobis corrupti. Veniam itaque dignissimos assumenda exercitationem molestias doloribus, neque, numquam, nostrum totam sapiente odio praesentium repellat dolor!
+                              Doloremque vero ex voluptates quo! Commodi deserunt cumque necessitatibus. Soluta voluptatem quas facilis, repellendus necessitatibus quo non consectetur nemo exercitationem, aperiam culpa delectus dolore iste repudiandae provident vero vel suscipit.
+                              Tempore doloribus quasi praesentium mollitia assumenda ducimus nihil ab, ipsam quod voluptates nobis porro distinctio iure minima repellat vitae alias dolores voluptatibus quia esse excepturi. Voluptatem repellendus accusantium quis voluptatibus.
+                              Quod animi, nobis impedit tempore aut atque alias numquam quo cupiditate placeat! Odio dignissimos vitae at, magnam esse possimus fugiat aperiam quaerat aspernatur ea, officia consectetur voluptates dolores nam laboriosam?
+                              Unde mollitia laboriosam animi ex expedita ducimus laudantium in accusamus quo, quisquam delectus, molestiae numquam nostrum eligendi odio debitis perspiciatis! Veritatis nostrum impedit dignissimos tenetur, vel nisi alias et possimus?
+                              Voluptatum provident, ipsum molestias quia sed itaque suscipit ipsa fugit alias et doloremque eveniet quam sint eaque at eum necessitatibus. Omnis, perspiciatis labore? Exercitationem accusamus doloremque obcaecati illo soluta! Laborum.
+                              Est quis, quibusdam tempora laborum dolorem aliquam sint alias fugit quo libero. Dolorem quidem quis numquam sint fuga, quam aliquam quia voluptate ratione excepturi expedita, ipsam non! Deserunt, ullam magnam.
+                              Rem, voluptatem? Dolorem enim quisquam qui corporis ea tempore, cumque eveniet cum amet sed voluptates necessitatibus? Dolorem, ipsum adipisci officiis non voluptatibus mollitia nam ad voluptate, suscipit illo, harum quod.
+                              Unde expedita vero labore laborum minima quos odit eum nihil debitis porro, officia distinctio? Ab quod veniam consequuntur asperiores, eaque blanditiis tenetur impedit eveniet quia sint nulla itaque totam non?
+                              Ducimus velit possimus laboriosam totam architecto provident, nobis distinctio vitae labore, optio ab consequatur repellat magnam ratione nesciunt eos eaque porro tempora nihil error, illo enim ullam fugiat sed? Possimus!</p>
+                      </div>
+              </div>
+              <div className='bottom'>
+                    <div className='comments'>
+                            <Form/>
+                    </div>
+                    <div className='rentrate'>
+                          <Chart/>
+                    </div>
+              </div>   
+          <div>
+    </div>
